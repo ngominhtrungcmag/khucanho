@@ -66,8 +66,8 @@
             // 
             this.panel_KhuCanHo.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel_KhuCanHo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_KhuCanHo.Controls.Add(this.panel_KCH);
             this.panel_KhuCanHo.Controls.Add(this.label_khuCanHo);
+            this.panel_KhuCanHo.Controls.Add(this.panel_KCH);
             this.panel_KhuCanHo.Location = new System.Drawing.Point(307, 224);
             this.panel_KhuCanHo.Name = "panel_KhuCanHo";
             this.panel_KhuCanHo.Size = new System.Drawing.Size(120, 120);
@@ -100,8 +100,8 @@
             // 
             this.panel_CanHo.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel_CanHo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_CanHo.Controls.Add(this.panel_CH);
             this.panel_CanHo.Controls.Add(this.label_CanHo);
+            this.panel_CanHo.Controls.Add(this.panel_CH);
             this.panel_CanHo.Location = new System.Drawing.Point(482, 224);
             this.panel_CanHo.Name = "panel_CanHo";
             this.panel_CanHo.Size = new System.Drawing.Size(120, 120);
@@ -132,8 +132,8 @@
             // 
             this.panel_KhachHang.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel_KhachHang.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_KhachHang.Controls.Add(this.panel_KH);
             this.panel_KhachHang.Controls.Add(this.label_khachHang);
+            this.panel_KhachHang.Controls.Add(this.panel_KH);
             this.panel_KhachHang.Location = new System.Drawing.Point(649, 224);
             this.panel_KhachHang.Name = "panel_KhachHang";
             this.panel_KhachHang.Size = new System.Drawing.Size(120, 120);
@@ -164,8 +164,8 @@
             // 
             this.panel_DienNuoc.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel_DienNuoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_DienNuoc.Controls.Add(this.panel_DN);
             this.panel_DienNuoc.Controls.Add(this.label_dienNuoc);
+            this.panel_DienNuoc.Controls.Add(this.panel_DN);
             this.panel_DienNuoc.Location = new System.Drawing.Point(482, 373);
             this.panel_DienNuoc.Name = "panel_DienNuoc";
             this.panel_DienNuoc.Size = new System.Drawing.Size(120, 120);
@@ -196,8 +196,8 @@
             // 
             this.panel_NhanVien.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel_NhanVien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_NhanVien.Controls.Add(this.panel_NV);
             this.panel_NhanVien.Controls.Add(this.label_nhanVien);
+            this.panel_NhanVien.Controls.Add(this.panel_NV);
             this.panel_NhanVien.Location = new System.Drawing.Point(649, 373);
             this.panel_NhanVien.Name = "panel_NhanVien";
             this.panel_NhanVien.Size = new System.Drawing.Size(120, 120);
@@ -228,8 +228,8 @@
             // 
             this.panel_GiaoDich.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel_GiaoDich.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_GiaoDich.Controls.Add(this.panel_GD);
             this.panel_GiaoDich.Controls.Add(this.label_giaoDich);
+            this.panel_GiaoDich.Controls.Add(this.panel_GD);
             this.panel_GiaoDich.Location = new System.Drawing.Point(307, 373);
             this.panel_GiaoDich.Name = "panel_GiaoDich";
             this.panel_GiaoDich.Size = new System.Drawing.Size(120, 120);

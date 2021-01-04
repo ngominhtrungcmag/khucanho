@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button_sua_nhanVien = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,7 +40,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.textBox_hoVaTen = new System.Windows.Forms.TextBox();
             this.textBox_diaChi = new System.Windows.Forms.TextBox();
             this.textBox_maNhanVien = new System.Windows.Forms.TextBox();
@@ -52,8 +50,9 @@
             this.checkBox_nu = new System.Windows.Forms.CheckBox();
             this.textBox_vaiTro = new System.Windows.Forms.TextBox();
             this.textBox_luong = new System.Windows.Forms.TextBox();
-            this.textBox_passWord = new System.Windows.Forms.TextBox();
             this.dateTimePicker_ngaySinh = new System.Windows.Forms.DateTimePicker();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.ChangePass = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,16 +65,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(977, 100);
             this.panel1.TabIndex = 7;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel2.BackgroundImage = global::KhuCanHo.Properties.Resources.round_account_box_white_48dp1;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(18, 15);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(70, 70);
-            this.panel2.TabIndex = 1;
             // 
             // label1
             // 
@@ -93,7 +82,7 @@
             this.button_sua_nhanVien.BackColor = System.Drawing.SystemColors.HotTrack;
             this.button_sua_nhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_sua_nhanVien.ForeColor = System.Drawing.Color.AliceBlue;
-            this.button_sua_nhanVien.Location = new System.Drawing.Point(447, 423);
+            this.button_sua_nhanVien.Location = new System.Drawing.Point(289, 422);
             this.button_sua_nhanVien.Name = "button_sua_nhanVien";
             this.button_sua_nhanVien.Size = new System.Drawing.Size(150, 50);
             this.button_sua_nhanVien.TabIndex = 7;
@@ -127,7 +116,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(507, 279);
+            this.label4.Location = new System.Drawing.Point(492, 238);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 14);
             this.label4.TabIndex = 10;
@@ -147,7 +136,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(507, 239);
+            this.label6.Location = new System.Drawing.Point(492, 198);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 14);
             this.label6.TabIndex = 12;
@@ -177,31 +166,21 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(507, 323);
+            this.label10.Location = new System.Drawing.Point(492, 282);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(43, 14);
+            this.label10.Size = new System.Drawing.Size(52, 14);
             this.label10.TabIndex = 16;
-            this.label10.Text = "Vai trò";
+            this.label10.Text = "Chức vụ";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(509, 364);
+            this.label13.Location = new System.Drawing.Point(494, 323);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(42, 14);
             this.label13.TabIndex = 19;
             this.label13.Text = "Lương";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(507, 201);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(57, 14);
-            this.label11.TabIndex = 20;
-            this.label11.Text = "Mật khẩu";
             // 
             // textBox_hoVaTen
             // 
@@ -220,14 +199,14 @@
             // textBox_maNhanVien
             // 
             this.textBox_maNhanVien.Enabled = false;
-            this.textBox_maNhanVien.Location = new System.Drawing.Point(622, 236);
+            this.textBox_maNhanVien.Location = new System.Drawing.Point(607, 195);
             this.textBox_maNhanVien.Name = "textBox_maNhanVien";
             this.textBox_maNhanVien.Size = new System.Drawing.Size(150, 20);
             this.textBox_maNhanVien.TabIndex = 25;
             // 
             // textBox_soCMND
             // 
-            this.textBox_soCMND.Location = new System.Drawing.Point(622, 277);
+            this.textBox_soCMND.Location = new System.Drawing.Point(607, 236);
             this.textBox_soCMND.Name = "textBox_soCMND";
             this.textBox_soCMND.Size = new System.Drawing.Size(150, 20);
             this.textBox_soCMND.TabIndex = 26;
@@ -272,7 +251,7 @@
             // textBox_vaiTro
             // 
             this.textBox_vaiTro.Enabled = false;
-            this.textBox_vaiTro.Location = new System.Drawing.Point(622, 319);
+            this.textBox_vaiTro.Location = new System.Drawing.Point(607, 278);
             this.textBox_vaiTro.Name = "textBox_vaiTro";
             this.textBox_vaiTro.Size = new System.Drawing.Size(150, 20);
             this.textBox_vaiTro.TabIndex = 31;
@@ -280,18 +259,10 @@
             // textBox_luong
             // 
             this.textBox_luong.Enabled = false;
-            this.textBox_luong.Location = new System.Drawing.Point(622, 361);
+            this.textBox_luong.Location = new System.Drawing.Point(607, 320);
             this.textBox_luong.Name = "textBox_luong";
             this.textBox_luong.Size = new System.Drawing.Size(150, 20);
             this.textBox_luong.TabIndex = 32;
-            // 
-            // textBox_passWord
-            // 
-            this.textBox_passWord.Location = new System.Drawing.Point(622, 198);
-            this.textBox_passWord.Name = "textBox_passWord";
-            this.textBox_passWord.PasswordChar = '*';
-            this.textBox_passWord.Size = new System.Drawing.Size(150, 20);
-            this.textBox_passWord.TabIndex = 33;
             // 
             // dateTimePicker_ngaySinh
             // 
@@ -301,14 +272,37 @@
             this.dateTimePicker_ngaySinh.Size = new System.Drawing.Size(150, 20);
             this.dateTimePicker_ngaySinh.TabIndex = 34;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel2.BackgroundImage = global::KhuCanHo.Properties.Resources.round_account_box_white_48dp1;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(18, 15);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(70, 70);
+            this.panel2.TabIndex = 1;
+            // 
+            // ChangePass
+            // 
+            this.ChangePass.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.ChangePass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChangePass.ForeColor = System.Drawing.Color.AliceBlue;
+            this.ChangePass.Location = new System.Drawing.Point(495, 422);
+            this.ChangePass.Name = "ChangePass";
+            this.ChangePass.Size = new System.Drawing.Size(165, 50);
+            this.ChangePass.TabIndex = 35;
+            this.ChangePass.Text = "Đổi mật khẩu";
+            this.ChangePass.UseVisualStyleBackColor = false;
+            this.ChangePass.Click += new System.EventHandler(this.ChangePass_Click);
+            // 
             // NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
             this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Controls.Add(this.ChangePass);
             this.Controls.Add(this.dateTimePicker_ngaySinh);
-            this.Controls.Add(this.textBox_passWord);
             this.Controls.Add(this.textBox_luong);
             this.Controls.Add(this.textBox_vaiTro);
             this.Controls.Add(this.checkBox_nu);
@@ -319,7 +313,6 @@
             this.Controls.Add(this.textBox_maNhanVien);
             this.Controls.Add(this.textBox_diaChi);
             this.Controls.Add(this.textBox_hoVaTen);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -354,7 +347,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox_hoVaTen;
         private System.Windows.Forms.TextBox textBox_diaChi;
         private System.Windows.Forms.TextBox textBox_maNhanVien;
@@ -365,8 +357,8 @@
         private System.Windows.Forms.CheckBox checkBox_nu;
         private System.Windows.Forms.TextBox textBox_vaiTro;
         private System.Windows.Forms.TextBox textBox_luong;
-        private System.Windows.Forms.TextBox textBox_passWord;
         private System.Windows.Forms.DateTimePicker dateTimePicker_ngaySinh;
         private System.Windows.Forms.Button button_sua_nhanVien;
+        private System.Windows.Forms.Button ChangePass;
     }
 }

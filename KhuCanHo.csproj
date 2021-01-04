@@ -262,6 +262,12 @@
     <Compile Include="Views\fAdmin.Designer.cs">
       <DependentUpon>fAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\UpdatePassWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UpdatePassWord.Designer.cs">
+      <DependentUpon>UpdatePassWord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -367,6 +373,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\UpdatePassWord.resx">
+      <DependentUpon>UpdatePassWord.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -33,10 +33,16 @@ namespace KhuCanHo.Controller
         }
         public int Update_MyInFor(NhanVienDAL nv)
         {
-            string query = "UPDATE nhanvien SET hoTen=N'" + nv.hoTen + "', diaChi=N'" + nv.diaChi + "', soCMND='" + nv.soCMND + "', soDienThoai='" + nv.soDienThoai + "', maKhau= '"+nv.matKhau+"' where maNhanVien='" + nv.maNhanVien + "'";
-            MessageBox.Show(query);
+            string query = "UPDATE nhanvien SET hoTen=N'" + nv.hoTen + "', diaChi=N'" + nv.diaChi + "', soCMND='" + nv.soCMND + "', soDienThoai='" + nv.soDienThoai +"' where maNhanVien='" + nv.maNhanVien + "'";
+           // MessageBox.Show(query);
             return DataProvider.Instance.ExcuteNonQuery(query);
         }
+        public int Update_MyPass(NhanVienDAL nv)
+        {
+            string query = "UPDATE nhanvien SET maKhau= '"+ nv.matKhau + "' where maNhanVien='" + nv.maNhanVien + "'";
+            return DataProvider.Instance.ExcuteNonQuery(query);
+        }
+
         // Controller for Khu Can Ho
         #region
         public DataTable Load_KhuCanHo()
@@ -127,7 +133,7 @@ namespace KhuCanHo.Controller
         public int Add_GiaoDich(HopDongDAL hopdongDAL)
         {
             string query = "insert into HOPDONG values('" + hopdongDAL.maHopDong + "', '" + hopdongDAL.maKhachHang + "', '" + hopdongDAL.maNhanVien + "', '" + hopdongDAL.maCanHo + "','" + hopdongDAL.ngayGiaoDich + "');";
-            MessageBox.Show(query);
+            //MessageBox.Show(query);
             return DataProvider.Instance.ExcuteNonQuery(query);
         }
 
