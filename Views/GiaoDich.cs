@@ -27,14 +27,13 @@ namespace KhuCanHo
         {
             InitializeComponent();
             RefreshForm();
-            this.nv = nv;
-            
+            this.nv = nv;  
         }
 
         private void button_them_GiaoDich_MouseClick(object sender, MouseEventArgs e)
         {
-            AddGiaoDich addGiaoDich = new AddGiaoDich();
-            addGiaoDich.Show();
+            AddGiaoDich addGiaoDich = new AddGiaoDich(nv);
+            addGiaoDich.Show(this);
             RefreshForm();
         }
 
@@ -60,7 +59,6 @@ namespace KhuCanHo
                 hd.maCanHo = dataGridView_GiaoDich.Rows[index].Cells["maCanHo"].Value.ToString();
                 hd.ngayGiaoDich = dataGridView_GiaoDich.Rows[index].Cells["ngayGiaoDich"].Value.ToString();
             }
-
         }
 
 

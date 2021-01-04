@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.maCanHo_themGiaoDich = new System.Windows.Forms.TextBox();
             this.maNhanVien_themGiaoDich = new System.Windows.Forms.TextBox();
-            this.maKhachHang_themGiaoDich = new System.Windows.Forms.TextBox();
             this.maHopDong_themGiaoDich = new System.Windows.Forms.TextBox();
             this.button_thoat_AddGiaoDich = new System.Windows.Forms.Button();
             this.button_them_AddGiaoDich = new System.Windows.Forms.Button();
@@ -41,14 +39,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker_ngayGiaoDich = new System.Windows.Forms.DateTimePicker();
+            this.comboBox_maKhachHang = new System.Windows.Forms.ComboBox();
+            this.comboBox_maCanHo = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // maCanHo_themGiaoDich
-            // 
-            this.maCanHo_themGiaoDich.Location = new System.Drawing.Point(172, 228);
-            this.maCanHo_themGiaoDich.Name = "maCanHo_themGiaoDich";
-            this.maCanHo_themGiaoDich.Size = new System.Drawing.Size(130, 20);
-            this.maCanHo_themGiaoDich.TabIndex = 24;
             // 
             // maNhanVien_themGiaoDich
             // 
@@ -56,14 +49,6 @@
             this.maNhanVien_themGiaoDich.Name = "maNhanVien_themGiaoDich";
             this.maNhanVien_themGiaoDich.Size = new System.Drawing.Size(130, 20);
             this.maNhanVien_themGiaoDich.TabIndex = 23;
-            this.maNhanVien_themGiaoDich.TextChanged += new System.EventHandler(this.maNhanVien_themGiaoDich_TextChanged);
-            // 
-            // maKhachHang_themGiaoDich
-            // 
-            this.maKhachHang_themGiaoDich.Location = new System.Drawing.Point(172, 156);
-            this.maKhachHang_themGiaoDich.Name = "maKhachHang_themGiaoDich";
-            this.maKhachHang_themGiaoDich.Size = new System.Drawing.Size(130, 20);
-            this.maKhachHang_themGiaoDich.TabIndex = 22;
             // 
             // maHopDong_themGiaoDich
             // 
@@ -155,16 +140,34 @@
             this.dateTimePicker_ngayGiaoDich.Size = new System.Drawing.Size(130, 20);
             this.dateTimePicker_ngayGiaoDich.TabIndex = 25;
             // 
+            // comboBox_maKhachHang
+            // 
+            this.comboBox_maKhachHang.AccessibleName = "comboBox_maKhachHang";
+            this.comboBox_maKhachHang.FormattingEnabled = true;
+            this.comboBox_maKhachHang.Location = new System.Drawing.Point(172, 156);
+            this.comboBox_maKhachHang.Name = "comboBox_maKhachHang";
+            this.comboBox_maKhachHang.Size = new System.Drawing.Size(130, 21);
+            this.comboBox_maKhachHang.TabIndex = 26;
+            // 
+            // comboBox_maCanHo
+            // 
+            this.comboBox_maCanHo.AccessibleName = "comboBox_maCanHo";
+            this.comboBox_maCanHo.FormattingEnabled = true;
+            this.comboBox_maCanHo.Location = new System.Drawing.Point(172, 229);
+            this.comboBox_maCanHo.Name = "comboBox_maCanHo";
+            this.comboBox_maCanHo.Size = new System.Drawing.Size(130, 21);
+            this.comboBox_maCanHo.TabIndex = 27;
+            // 
             // AddGiaoDich
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
             this.ClientSize = new System.Drawing.Size(384, 461);
+            this.Controls.Add(this.comboBox_maCanHo);
+            this.Controls.Add(this.comboBox_maKhachHang);
             this.Controls.Add(this.dateTimePicker_ngayGiaoDich);
-            this.Controls.Add(this.maCanHo_themGiaoDich);
             this.Controls.Add(this.maNhanVien_themGiaoDich);
-            this.Controls.Add(this.maKhachHang_themGiaoDich);
             this.Controls.Add(this.maHopDong_themGiaoDich);
             this.Controls.Add(this.button_thoat_AddGiaoDich);
             this.Controls.Add(this.button_them_AddGiaoDich);
@@ -185,9 +188,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox maCanHo_themGiaoDich;
         private System.Windows.Forms.TextBox maNhanVien_themGiaoDich;
-        private System.Windows.Forms.TextBox maKhachHang_themGiaoDich;
         private System.Windows.Forms.TextBox maHopDong_themGiaoDich;
         private System.Windows.Forms.Button button_thoat_AddGiaoDich;
         private System.Windows.Forms.Button button_them_AddGiaoDich;
@@ -198,5 +199,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker_ngayGiaoDich;
+        private System.Windows.Forms.ComboBox comboBox_maKhachHang;
+        private System.Windows.Forms.ComboBox comboBox_maCanHo;
     }
 }
